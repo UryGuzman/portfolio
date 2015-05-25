@@ -1,7 +1,5 @@
 # Site Settings
 
-baseurl: /portfolio
-
 # Build settings
 
 markdown: kramdown
