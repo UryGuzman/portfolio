@@ -1,7 +1,6 @@
 # Site Settings
 
-intro: Welcome to my site
-kicker: Graphic design // Web development // Branding
+baseurl: /portfolio
 
 # Build settings
 
