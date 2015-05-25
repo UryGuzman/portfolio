@@ -1,0 +1,15 @@
+# Site Settings
+
+intro: Welcome to my site
+kicker: Graphic design // Web development // Branding
+
+# Build settings
+
+markdown: kramdown
+permalink: pretty
+
+port: 3000
+
+sass:
+  sass_dir: assets/css
+  style: :nested

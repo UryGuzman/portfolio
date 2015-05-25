@@ -1,0 +1,45 @@
+<div id="footer">
+	<div id="inner_footer">             
+    <div id="contact_info">
+      	<h3 class="headline">A little bit about me</h3>
+        <p>I am a graphic and web designer that focuses on simple solutions<br> 
+  				to increase your business and achieve your goals.<br> 
+					If you have any questions feel free to contact me.</p>
+        <span class="email_info">uryguzman@gmail.com</span>
+        <a href="https://www.facebook.com/pages/Ury-Guzman-Graphic-and-Web-Designer/300856463376077"><div id="facebook"></div></a>
+        <a href="https://twitter.com/UryGuzman"><div id="twitter"></div></a>
+        <a href="http://www.linkedin.com/pub/ury-guzman/36/675/12"><div id="linkedin"></div></a>
+    </div>  
+    <div id="twitter_feed"> 
+    	<a class="twitter-timeline" href="https://twitter.com/UryGuzman" data-widget-id="307247876956897284">Tweets by @UryGuzman</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
+</div> 
+		<script>
+	$("#form1").submit(function(){
+		var isFormValid = true;
+	var rMessage = [],rClass='success';
+	$(".required").each(function(){
+	 if ($(this).val().length == 0) {
+		isFormValid = false;
+	}
+	});
+	
+	if (isFormValid) {
+			$.ajax({
+				url: 'webform.php',
+				type: 'post',
+				dataType: 'json',
+				data: $('#form1').serialize(),
+				success: rMessage.push('Thank You, I Will Get Back To You Shortly'),
+			});
+			onsubmit=this.reset();
+	} else{
+		rMessage.push('Please Fill All Required Fields');
+		rClass='fail';
+	}
+	jQuery('body').showMessage({thisMessage: rMessage, className: rClass});
+	return false;
+	});
+	</script>

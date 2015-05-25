@@ -1,0 +1,129 @@
+.hero_message
+	margin: 30px 0 0 0
+	color: white
+	-webkit-text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.58)
+	-text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.58)
+	text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.58)
+	-moz-text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.58)
+	-ms-text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.58)
+	-khtml-text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.58)
+
+.fb_like
+	float: left
+
+/* Page Wraps */
+#wrapper 
+	background: #999
+	height: auto
+	overflow: hidden
+
+#inner_wrapper 
+	width: 100%
+	height: auto
+	background: #EDECED
+	margin: 0 auto
+
+body.down header.clone 
+	top: 0
+	left: 0
+	right: 0
+	z-index: 999
+
+
+header  
+	height: 99px
+	width: inherit
+	background: #F1F1F1
+	margin: 0 auto
+	border-bottom: 6px solid #DFDFDF
+	z-index: 1000
+	top: 0
+
+header.clone 
+	position: fixed
+	top: -170px
+	transition: 0.4s top ease-in-out
+	
+#inner_header
+	width: 1090px
+	height: inherit
+	margin: 0 auto
+	
+
+#logo
+	float: left
+	margin: 20px 0 0 25px
+
+	svg
+		height: 50px
+		width: 50px
+
+#name_container 
+	width: 203px
+	height: inherit
+	float: left
+	color: black
+	margin: 0 0 0 20px
+
+nav 
+	list-style: none
+	display: inline-block
+	float: right
+
+nav ul
+	margin: 0
+
+nav ul li 
+	float: left
+	width: 65px
+	height: 25px
+	padding: 33px 0 0 0
+	margin: 0 10px
+	text-align: center
+	list-style: none
+
+nav ul li:hover
+	border-bottom: #F60 3px solid
+	cursor: pointer
+
+
+nav ul li a
+	font-family: 'Source Sans Pro', sans-serif
+	color: #D0D2D3
+	-webkit-transition: color .5s ease-in  
+	-moz-transition: color .5s ease-in  
+	-o-transition: color .5s ease-in  
+	transition: color .5s ease-in	
+
+nav ul li:hover a
+	color: #000
+
+
+#main 
+	height: 533px
+	width: auto
+	border-bottom: 6px solid whitesmoke
+	@include blendy("113H.jpg", rgba(0,0,0, 0.5), multiply)
+	background-size: cover
+	background-position: 0 -200px
+	background-attachment: fixed
+
+#main_title 
+	width: 1090px
+	height: 471px
+	padding: 46px 0 0 50px
+	margin: 0 auto
+	z-index: 1
+
+#services
+	background: #F1F1F1
+	width: auto
+	text-align: center
+	color: #ccc
+	padding: 5px
+	margin-bottom: 6px
+
+#process 
+	height: 612px
+	width: 100%
+	border-bottom: 6px solid whitesmoke
