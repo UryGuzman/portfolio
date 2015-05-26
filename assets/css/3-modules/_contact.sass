@@ -1,7 +1,6 @@
 #mail
 	width: 100%
 	margin: 0 auto
-	display: none
 
 #message_container
 	width: 100%
@@ -26,16 +25,12 @@
 		font-style: italic
 		color: #ccc
 
-
-
-	
 	::-moz-placeholder  /* Firefox 18- */
 		font-family: 'Source Sans Pro', sans-serif
 		font-size: 21px
 		font-weight: 100
 		font-style: italic
 		color: #ccc  
-
 
 	::-moz-placeholder   /* Firefox 19+ */
 		font-family: 'Source Sans Pro', sans-serif
@@ -44,14 +39,12 @@
 		font-style: italic
 		color: #ccc
 
-
 	:-ms-input-placeholder   
 		font-family: 'Source Sans Pro', sans-serif
 		font-style: italic
 		font-size: 21px
 		font-weight: 100
 		color: #ccc 
-
 
 #message_form
 	height: 114px
@@ -125,4 +118,60 @@ label.error
 #submit:hover 
 	opacity: 0.9
 	background-position: 0px 41px
-	
+
+/* showMessage styles */
+#showMessage 
+	display: none
+	left: 0
+	padding: 18px 0 0 0
+	height: 81px
+	width: 100%
+	margin: 0
+	text-align: center
+
+
+span.messageNav 
+	float: right
+	padding-right: 1em
+	font-weight: bold
+	font-size: small
+
+
+.stateHolder 
+	width: 90%
+	margin: 1em auto
+	padding: 0.5em
+
+
+#showMessage ul 
+	font-size: large
+	font-weight: bold
+	margin-left: 0
+	padding-left: 0
+
+
+#showMessage li 
+	list-style-image: none
+	list-style-position: outside
+	list-style-type: none
+
+
+.notification,.success,.fail 
+	font-family: Arial, Helvetica, clean, sans-serif
+	font-size: large
+	font-weight: bold
+
+
+.notification 
+	background-color: #efefef
+	color: green
+
+
+.success 
+	background-color: #acfa58
+	color: black
+
+
+.fail 
+	background-color: #fe2e2e
+	color: white
