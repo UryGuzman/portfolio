@@ -622,8 +622,7 @@ nav ul li:hover a {
     width: 100%; } }
 #mail {
   width: 100%;
-  margin: 0 auto;
-  color: black; }
+  margin: 0 auto; }
 
 #message_container {
   width: 100%;
@@ -687,7 +686,8 @@ nav ul li:hover a {
   -webkit-border-radius: 5px;
   border: none;
   margin: 10px 0 23px 0;
-  line-height: 14px; }
+  line-height: 14px;
+  color: black; }
 
 #email {
   width: 300px;
@@ -697,7 +697,8 @@ nav ul li:hover a {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border: none;
-  line-height: 14px; }
+  line-height: 14px;
+  color: black; }
 
 textarea {
   height: 123px;
@@ -711,7 +712,8 @@ textarea {
   float: left;
   resize: none;
   overflow: hidden;
-  line-height: 14px; }
+  line-height: 14px;
+  color: black; }
 
 label.error {
   float: left;
